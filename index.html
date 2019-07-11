@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" 
+      type="image/png" 
+      href="mercator_1569.png">
+    <title>Mercator 1569 World Map</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.1/openseadragon.min.js"
+        integrity="sha256-qIiBj8XqCj196KLyEX8fBJ0HiHUZmXYmYFciVQZ7nls=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="demoarea">
+        <div id="contentDiv" style="width: 100%; height: 800px;"></div>
+        <div class="image-credit" style="text-align: center; font-family:sans-serif">Image Source: <a
+                href="https://commons.wikimedia.org/wiki/File:Mercator_1569_world_map_composite.jpg"
+                target="_blank">Wikimedia Commons</a></div>
+    </div>
+
+    <script type="text/javascript">
+        // Example
+        OpenSeadragon({
+            id: "contentDiv",
+            prefixUrl: "//cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.1/images/",
+            tileSources: "mercator_1569.dzi",
+            showNavigator: true
+        });
+    </script>
+</body>
+
+</html>
